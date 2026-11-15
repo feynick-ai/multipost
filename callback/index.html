@@ -1,0 +1,7 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>multipost</title>
+<!-- 平台不接受 http://127.0.0.1 当回调地址，所以先回到这个 https 页面，再原样转回本机的 multipost -->
+<script>location.replace("http://127.0.0.1:20006/callback" + location.search);</script>
+<p style="font:16px system-ui,sans-serif;padding:24px">正在回到 multipost… 没反应的话，确认 multipost 开着，再<a id="go" href="#">点这里</a>。</p>
+<script>document.getElementById("go").href = "http://127.0.0.1:20006/callback" + location.search;</script>
